@@ -1,6 +1,6 @@
 ﻿namespace FirstHomework
 {
-    partial class Form1
+    partial class FirstForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -52,15 +52,15 @@
             lbl.Size = new Size(0, 56);
             lbl.TabIndex = 1;
             // 
-            // Form1
+            // FirstForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(lbl);
             Controls.Add(button);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FirstForm";
+            Text = "FirstForm";
             ResumeLayout(false);
             PerformLayout();
         }

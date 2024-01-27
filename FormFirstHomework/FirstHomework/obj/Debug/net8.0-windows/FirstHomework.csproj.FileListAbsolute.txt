@@ -3,7 +3,6 @@ E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\bin\Debug\net8.0-windo
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\bin\Debug\net8.0-windows\FirstHomework.runtimeconfig.json
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\bin\Debug\net8.0-windows\FirstHomework.dll
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\bin\Debug\net8.0-windows\FirstHomework.pdb
-E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.Form1.resources
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.csproj.GenerateResource.cache
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.GeneratedMSBuildEditorConfig.editorconfig
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.AssemblyInfoInputs.cache
@@ -14,3 +13,5 @@ E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windo
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.pdb
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.genruntimeconfig.cache
 E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\ref\FirstHomework.dll
+E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.FirstForm.resources
+E:\Github\Gelecgini-Kodla\FormFirstHomework\FirstHomework\obj\Debug\net8.0-windows\FirstHomework.sourcelink.json
