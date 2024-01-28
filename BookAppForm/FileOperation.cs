@@ -1,4 +1,6 @@
-﻿namespace Book
+﻿using System.Text;
+
+namespace Book
 {
     public class FileOperation
     {
@@ -12,7 +14,7 @@
         public static void SaveFile(string data)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\books.json";
-            File.WriteAllText(path, data);
+            File.WriteAllText(path, data, Encoding.UTF8);
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookAppForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+143a13a8a1205c85ea7b11d185ca001ae81d1eb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b49ba5ae89675e3cb40a7c1f85a9a3d4de96a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookAppForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookAppForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

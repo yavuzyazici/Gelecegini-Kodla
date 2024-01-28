@@ -1,14 +1,1 @@
-[
-  {
-    "Title": "Bilim Ne Değildir",
-    "Description": "Bilimcilik yapan asan kesen insanlara yazılmaz en büyük rajon kitabıdır",
-    "Author": "Alper Bilgili",
-    "ISBN": "13123123"
-  },
-  {
-    "Title": "Seyehatname",
-    "Description": "Dünya klasiği müthiş bir eser",
-    "Author": "Evliya Çelebi",
-    "ISBN": "001199"
-  }
-]
+﻿[{"Title":"Bilim Ne Değildir","Author":"Alper Bilgili","ISBN":"13123123","Description":"Bilimcilik yapan asan kesen insanlara yazılmaz en büyük rajon kitabıdır"},{"Title":"Seyehatname","Author":"Evliya Çelebi","ISBN":"001199","Description":"Dünya klasiği müthiş bir eser"},{"Title":"Sınırsız","Author":"Jim Kwik","ISBN":"152135959","Description":"Beyin vs. o işler"},{"Title":"Zengin Baba Yoksul Baba","Author":"Robert Kiyosaki","ISBN":"1521256","Description":"Finans vs."},{"Title":"Zengin Olmak İçin Tıkla","Author":"Bahaddin Yazıcı","ISBN":"984231499645","Description":"Bahaddin Yazıcının şaheseri. Çok iyi kitaptır öneririm."}]

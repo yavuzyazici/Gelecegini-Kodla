@@ -30,11 +30,11 @@
         {
             label1 = new Label();
             txtBoxTitle = new TextBox();
-            textBox1 = new TextBox();
+            txtBoxAuthor = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtBoxDesc = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtBoxISBN = new TextBox();
             label4 = new Label();
             btnAdd = new Button();
             SuspendLayout();
@@ -45,9 +45,9 @@
             label1.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label1.Location = new Point(22, 9);
             label1.Name = "label1";
-            label1.Size = new Size(90, 22);
+            label1.Size = new Size(44, 22);
             label1.TabIndex = 0;
-            label1.Text = "Book Title";
+            label1.Text = "Title";
             // 
             // txtBoxTitle
             // 
@@ -56,12 +56,12 @@
             txtBoxTitle.Size = new Size(323, 23);
             txtBoxTitle.TabIndex = 1;
             // 
-            // textBox1
+            // txtBoxAuthor
             // 
-            textBox1.Location = new Point(22, 127);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(323, 23);
-            textBox1.TabIndex = 3;
+            txtBoxAuthor.Location = new Point(22, 127);
+            txtBoxAuthor.Name = "txtBoxAuthor";
+            txtBoxAuthor.Size = new Size(323, 23);
+            txtBoxAuthor.TabIndex = 2;
             // 
             // label2
             // 
@@ -69,17 +69,18 @@
             label2.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label2.Location = new Point(22, 93);
             label2.Name = "label2";
-            label2.Size = new Size(114, 22);
+            label2.Size = new Size(68, 22);
             label2.TabIndex = 2;
-            label2.Text = "Book Author";
+            label2.Text = "Author";
             // 
-            // textBox2
+            // txtBoxDesc
             // 
-            textBox2.Location = new Point(22, 310);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(323, 128);
-            textBox2.TabIndex = 5;
+            txtBoxDesc.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            txtBoxDesc.Location = new Point(22, 310);
+            txtBoxDesc.Multiline = true;
+            txtBoxDesc.Name = "txtBoxDesc";
+            txtBoxDesc.Size = new Size(323, 128);
+            txtBoxDesc.TabIndex = 4;
             // 
             // label3
             // 
@@ -87,16 +88,16 @@
             label3.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label3.Location = new Point(22, 274);
             label3.Name = "label3";
-            label3.Size = new Size(150, 22);
+            label3.Size = new Size(104, 22);
             label3.TabIndex = 4;
-            label3.Text = "Book Description";
+            label3.Text = "Description";
             // 
-            // textBox3
+            // txtBoxISBN
             // 
-            textBox3.Location = new Point(22, 223);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(317, 23);
-            textBox3.TabIndex = 7;
+            txtBoxISBN.Location = new Point(22, 211);
+            txtBoxISBN.Name = "txtBoxISBN";
+            txtBoxISBN.Size = new Size(317, 23);
+            txtBoxISBN.TabIndex = 3;
             // 
             // label4
             // 
@@ -104,19 +105,21 @@
             label4.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label4.Location = new Point(22, 173);
             label4.Name = "label4";
-            label4.Size = new Size(96, 22);
+            label4.Size = new Size(50, 22);
             label4.TabIndex = 6;
-            label4.Text = "Book ISBN";
+            label4.Text = "ISBN";
             // 
             // btnAdd
             // 
+            btnAdd.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAdd.Font = new Font("Montserrat Black", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
             btnAdd.Location = new Point(368, 9);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(420, 429);
-            btnAdd.TabIndex = 8;
+            btnAdd.TabIndex = 5;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // AddBook
             // 
@@ -124,15 +127,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnAdd);
-            Controls.Add(textBox3);
+            Controls.Add(txtBoxISBN);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtBoxDesc);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtBoxAuthor);
             Controls.Add(label2);
             Controls.Add(txtBoxTitle);
             Controls.Add(label1);
             Name = "AddBook";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddBook";
             ResumeLayout(false);
             PerformLayout();
@@ -142,11 +146,11 @@
 
         private Label label1;
         private TextBox txtBoxTitle;
-        private TextBox textBox1;
+        private TextBox txtBoxAuthor;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtBoxDesc;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtBoxISBN;
         private Label label4;
         private Button btnAdd;
     }
