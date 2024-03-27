@@ -42,10 +42,19 @@ namespace BookAppForm
         {
             Home home = new Home();
             UpdateBook updateBook = new UpdateBook();
-            updateBook.a = dG.CurrentRow.Cells[0].Value.ToString();
-            updateBook.b = dG.CurrentRow.Cells[1].Value.ToString();
-            updateBook.c = dG.CurrentRow.Cells[2].Value.ToString();
-            updateBook.d = dG.CurrentRow.Cells[3].Value.ToString();
+            string output = FileOperation.ReadFile();
+
+            var bookList = JsonConvert.DeserializeObject<List<BookItem>>(output);
+
+            var selectedBook = bookList.Where(x => x.Id.ToString() == dG.CurrentRow.Index.ToString()).FirstOrDefault();
+
+
+            updateBook.a = selectedBook.Title;
+            updateBook.b = selectedBook.Author;
+            updateBook.c = selectedBook.ISBN;
+            updateBook.d = selectedBook.Location;
+            updateBook.e = selectedBook.Status;
+            updateBook.f = selectedBook.Description;
             home.Hide();
             updateBook.Show();
         }

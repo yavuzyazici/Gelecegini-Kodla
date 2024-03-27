@@ -30,21 +30,25 @@ namespace BookAppForm
             item.Author = txtBoxAuthor.Text;
             item.Description = txtBoxDesc.Text;
             item.ISBN = txtBoxISBN.Text;
+            item.Location = txtBoxLocation.Text;
+            item.Status = checkBox.Checked;
             return item;
         }
 
-        bool CheckInput(string title, string author, string description, string isbn)
+        bool CheckInput(string title, string author, string description, string isbn, string location, bool status)
         {
             title = txtBoxTitle.Text;
             author = txtBoxAuthor.Text;
             description = txtBoxDesc.Text;
             isbn = txtBoxISBN.Text;
+            location = txtBoxLocation.Text;
             if (string.IsNullOrEmpty(title) ||
                 string.IsNullOrEmpty(author) ||
-                string.IsNullOrEmpty(description) ||
                 string.IsNullOrEmpty(isbn) ||
+                string.IsNullOrEmpty(location) ||
                 author.Length < 5 ||
                 author.Length > 20 ||
+                title.Length < 5 ||
                 title.Length > 50 ||
                 isbn.Length > 50)
             {
@@ -84,7 +88,7 @@ namespace BookAppForm
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var item = ReadLines();
-            if (CheckInput(item.Title, item.Author, item.Description, item.Author))
+            if (CheckInput(item.Title, item.Author, item.Description, item.Author, item.Location, item.Status))
             {
                 Add(item);
             }
@@ -92,6 +96,11 @@ namespace BookAppForm
             {
                 MessageBox.Show("Kitap bilgileri geçersiz.", "Kitap Ekleme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void AddBook_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

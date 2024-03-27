@@ -19,13 +19,16 @@ namespace BookAppForm
             InitializeComponent();
         }
 
-        public string a, b, c, d;
-        private void UpdateBook_Load(object sender, EventArgs e)
+        public string a, b, c, d, f;
+        public bool e;
+        private void UpdateBook_Load(object sender, EventArgs eventArgs)
         {
             txtBoxTitle.Text = a;
             txtBoxAuthor.Text = b;
             txtBoxISBN.Text = c;
-            txtBoxDesc.Text = d;
+            txtBoxLocation.Text = d;
+            checkBox.Checked = e;
+            txtBoxDesc.Text = f;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -40,24 +43,25 @@ namespace BookAppForm
             {
                 MessageBox.Show("Kitap bilgileri geçersiz.", "Kitap Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            string output = FileOperation.ReadFile();
+            Home.dG.DataSource = JsonConvert.DeserializeObject<List<BookItem>>(output);
         }
         public void Update(BookItem element)
         {
             string output = FileOperation.ReadFile();
             var books = JsonConvert.DeserializeObject<List<BookItem>>(output);
 
-
             var item = books.Where(x => x.ISBN == element.ISBN).First();
 
             item.Title = txtBoxTitle.Text;
             item.Author = txtBoxAuthor.Text;
             item.ISBN = txtBoxISBN.Text;
+            item.Location = txtBoxLocation.Text;
+            item.Status = checkBox.Checked;
             item.Description = txtBoxDesc.Text;
-
 
             var jsonString = JsonConvert.SerializeObject(books);
             FileOperation.SaveFile(jsonString);
-            //File.WriteAllText("books.json", jsonString, Encoding.UTF8);
         }
         private BookItem ReadLines()
         {
@@ -75,7 +79,6 @@ namespace BookAppForm
             isbn = txtBoxISBN.Text;
             if (string.IsNullOrEmpty(title) ||
                 string.IsNullOrEmpty(author) ||
-                string.IsNullOrEmpty(description) ||
                 string.IsNullOrEmpty(isbn) ||
                 author.Length < 5 ||
                 author.Length > 20 ||

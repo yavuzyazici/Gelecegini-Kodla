@@ -1,1 +1,47 @@
-﻿[{"Title":"Bilim Ne Değildir","Author":"Alper Bilgili","ISBN":"13123123","Description":"Bilimcilik yapan asan kesen insanlara yazılmaz en büyük rajon kitabıdır"},{"Title":"Seyehatname","Author":"Evliya Çelebi","ISBN":"001199","Description":"Dünya klasiği müthiş bir eser"},{"Title":"Sınırsız","Author":"Jim Kwik","ISBN":"152135959","Description":"Beyin vs. o işler"},{"Title":"Zengin Baba Yoksul Baba","Author":"Robert Kiyosaki","ISBN":"1521256","Description":"Finans vs."},{"Title":"Zengin Olmak İçin Tıkla","Author":"Bahaddin Yazıcı","ISBN":"984231499645","Description":"Bahaddin Yazıcının şaheseri. Çok iyi kitaptır öneririm."}]
+﻿[
+    {
+        "Author": "Jeff Sutherland",
+        "Description": "Waterfall ve Agile proje yönetim metodlarına karşı geliştirilmiş güçlü bir metod",
+        "Id": 0,
+        "ISBN": "978-605-84874-7-5",
+        "Location": "Merkez Ev",
+        "Status": false,
+        "Title": "Scrum İki katı işi yarı zamanda yağma sanatı"
+    },
+    {
+        "Author": "Jim Kwik",
+        "Description": "Beyin vs. o işler",
+        "Id": 1,
+        "ISBN": "152135959",
+        "Location": "Merkez Ev - Bazanın Altında",
+        "Status": true,
+        "Title": "Sınırsız"
+    },
+    {
+        "Author": "Robert Kiyosaki",
+        "Description": "Finans vs.",
+        "Id": 2,
+        "ISBN": "1521256",
+        "Location": "Merkez Ev - Bazanın Altında",
+        "Status": true,
+        "Title": "Zengin Baba Yoksul Baba"
+    },
+    {
+        "Author": "Bahaddin Yazıcı",
+        "Description": "Bahaddin Yazıcının şaheseri. Çok iyi kitaptır öneririm.",
+        "Id": 3,
+        "ISBN": "984231499645",
+        "Location": "Merkez Ev",
+        "Status": true,
+        "Title": "Zengin Olmak İçin Tıkla"
+    },
+    {
+        "Author": "Bahaddin Yazıcı",
+        "Description": "",
+        "Id": 4,
+        "ISBN": "978-975-01002-4-6",
+        "Location": "Köy Evi - Hazine Kitaplığı",
+        "Status": true,
+        "Title": "Değişen Rusya:Orta Asya"
+    }
+]

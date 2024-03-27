@@ -55,23 +55,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yavuz\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Github\\Gelecgini-Kodla\\BookAppForm\\BookAppForm.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Gelecegini-Kodla\\BookAppForm\\BookAppForm.csproj",
       "projectName": "BookAppForm",
-      "projectPath": "E:\\Github\\Gelecgini-Kodla\\BookAppForm\\BookAppForm.csproj",
-      "packagesPath": "C:\\Users\\yavuz\\.nuget\\packages\\",
-      "outputPath": "E:\\Github\\Gelecgini-Kodla\\BookAppForm\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Gelecegini-Kodla\\BookAppForm\\BookAppForm.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Gelecegini-Kodla\\BookAppForm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yavuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -122,7 +122,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
