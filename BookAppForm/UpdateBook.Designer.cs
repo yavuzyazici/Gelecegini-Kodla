@@ -37,10 +37,16 @@
             label2 = new Label();
             txtBoxTitle = new TextBox();
             label1 = new Label();
-            checkBox = new CheckBox();
             label5 = new Label();
             txtBoxLocation = new TextBox();
             label6 = new Label();
+            txtBoxPageCount = new TextBox();
+            lblPageCount = new Label();
+            txtBoxPage = new TextBox();
+            lblPage = new Label();
+            txtBoxTur = new TextBox();
+            lblTur = new Label();
+            txtStatus = new TextBox();
             SuspendLayout();
             // 
             // btnUpdate
@@ -49,7 +55,7 @@
             btnUpdate.Font = new Font("Montserrat Black", 26.2499962F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
             btnUpdate.Location = new Point(17, 274);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(323, 164);
+            btnUpdate.Size = new Size(269, 164);
             btnUpdate.TabIndex = 18;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -57,16 +63,16 @@
             // 
             // txtBoxISBN
             // 
-            txtBoxISBN.Location = new Point(17, 225);
+            txtBoxISBN.Location = new Point(145, 200);
             txtBoxISBN.Name = "txtBoxISBN";
-            txtBoxISBN.Size = new Size(323, 23);
+            txtBoxISBN.Size = new Size(195, 23);
             txtBoxISBN.TabIndex = 15;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label4.Location = new Point(17, 175);
+            label4.Location = new Point(145, 175);
             label4.Name = "label4";
             label4.Size = new Size(54, 22);
             label4.TabIndex = 19;
@@ -75,17 +81,17 @@
             // txtBoxDesc
             // 
             txtBoxDesc.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            txtBoxDesc.Location = new Point(416, 225);
+            txtBoxDesc.Location = new Point(416, 274);
             txtBoxDesc.Multiline = true;
             txtBoxDesc.Name = "txtBoxDesc";
-            txtBoxDesc.Size = new Size(323, 213);
+            txtBoxDesc.Size = new Size(323, 21);
             txtBoxDesc.TabIndex = 16;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label3.Location = new Point(416, 175);
+            label3.Location = new Point(416, 242);
             label3.Name = "label3";
             label3.Size = new Size(166, 22);
             label3.TabIndex = 17;
@@ -125,18 +131,6 @@
             label1.TabIndex = 11;
             label1.Text = "Title";
             // 
-            // checkBox
-            // 
-            checkBox.Anchor = AnchorStyles.Left;
-            checkBox.AutoSize = true;
-            checkBox.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            checkBox.Location = new Point(416, 129);
-            checkBox.Name = "checkBox";
-            checkBox.Size = new Size(72, 21);
-            checkBox.TabIndex = 23;
-            checkBox.Text = "Okundu";
-            checkBox.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -164,12 +158,76 @@
             label6.TabIndex = 20;
             label6.Text = "Location";
             // 
+            // txtBoxPageCount
+            // 
+            txtBoxPageCount.Location = new Point(542, 129);
+            txtBoxPageCount.Name = "txtBoxPageCount";
+            txtBoxPageCount.Size = new Size(197, 23);
+            txtBoxPageCount.TabIndex = 25;
+            // 
+            // lblPageCount
+            // 
+            lblPageCount.AutoSize = true;
+            lblPageCount.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblPageCount.Location = new Point(542, 95);
+            lblPageCount.Name = "lblPageCount";
+            lblPageCount.Size = new Size(118, 22);
+            lblPageCount.TabIndex = 24;
+            lblPageCount.Text = "Page Count";
+            // 
+            // txtBoxPage
+            // 
+            txtBoxPage.Location = new Point(17, 200);
+            txtBoxPage.Name = "txtBoxPage";
+            txtBoxPage.Size = new Size(96, 23);
+            txtBoxPage.TabIndex = 26;
+            // 
+            // lblPage
+            // 
+            lblPage.AutoSize = true;
+            lblPage.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblPage.Location = new Point(17, 175);
+            lblPage.Name = "lblPage";
+            lblPage.Size = new Size(118, 22);
+            lblPage.TabIndex = 27;
+            lblPage.Text = "Page Count";
+            // 
+            // txtBoxTur
+            // 
+            txtBoxTur.Location = new Point(292, 301);
+            txtBoxTur.Name = "txtBoxTur";
+            txtBoxTur.Size = new Size(156, 23);
+            txtBoxTur.TabIndex = 28;
+            // 
+            // lblTur
+            // 
+            lblTur.AutoSize = true;
+            lblTur.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblTur.Location = new Point(292, 271);
+            lblTur.Name = "lblTur";
+            lblTur.Size = new Size(40, 22);
+            lblTur.TabIndex = 29;
+            lblTur.Text = "Tür";
+            // 
+            // txtStatus
+            // 
+            txtStatus.Location = new Point(416, 129);
+            txtStatus.Name = "txtStatus";
+            txtStatus.Size = new Size(120, 23);
+            txtStatus.TabIndex = 30;
+            // 
             // UpdateBook
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(checkBox);
+            ClientSize = new Size(746, 450);
+            Controls.Add(txtStatus);
+            Controls.Add(txtBoxTur);
+            Controls.Add(lblTur);
+            Controls.Add(txtBoxPage);
+            Controls.Add(lblPage);
+            Controls.Add(txtBoxPageCount);
+            Controls.Add(lblPageCount);
             Controls.Add(label5);
             Controls.Add(txtBoxLocation);
             Controls.Add(label6);
@@ -200,9 +258,15 @@
         private Label label2;
         private TextBox txtBoxTitle;
         private Label label1;
-        private CheckBox checkBox;
         private Label label5;
         private TextBox txtBoxLocation;
         private Label label6;
+        private TextBox txtBoxPageCount;
+        private Label lblPageCount;
+        private TextBox txtBoxPage;
+        private Label lblPage;
+        private TextBox txtBoxTur;
+        private Label lblTur;
+        private TextBox txtStatus;
     }
 }

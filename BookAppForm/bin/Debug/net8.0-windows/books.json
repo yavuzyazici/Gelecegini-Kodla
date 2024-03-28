@@ -5,8 +5,9 @@
         "Id": 0,
         "ISBN": "978-605-84874-7-5",
         "Location": "Merkez Ev",
+        "PageCount": 283,
         "Status": false,
-        "Title": "Scrum İki katı işi yarı zamanda yağma sanatı"
+        "Title": "Scrum İki katı işi yarı zamanda yapma sanatı"
     },
     {
         "Author": "Jim Kwik",
@@ -14,6 +15,7 @@
         "Id": 1,
         "ISBN": "152135959",
         "Location": "Merkez Ev - Bazanın Altında",
+        "PageCount": 360,
         "Status": true,
         "Title": "Sınırsız"
     },
@@ -23,6 +25,7 @@
         "Id": 2,
         "ISBN": "1521256",
         "Location": "Merkez Ev - Bazanın Altında",
+        "PageCount": 243,
         "Status": true,
         "Title": "Zengin Baba Yoksul Baba"
     },
@@ -32,6 +35,7 @@
         "Id": 3,
         "ISBN": "984231499645",
         "Location": "Merkez Ev",
+        "PageCount": 87,
         "Status": true,
         "Title": "Zengin Olmak İçin Tıkla"
     },
@@ -41,6 +45,7 @@
         "Id": 4,
         "ISBN": "978-975-01002-4-6",
         "Location": "Köy Evi - Hazine Kitaplığı",
+        "PageCount": 144,
         "Status": true,
         "Title": "Değişen Rusya:Orta Asya"
     }

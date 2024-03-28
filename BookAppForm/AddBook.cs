@@ -26,6 +26,9 @@ namespace BookAppForm
         private BookItem ReadLines()
         {
             var item = new BookItem();
+            string output = FileOperation.ReadFile();
+            var books = JsonConvert.DeserializeObject<List<BookItem>>(output);
+            item.Id = books.Last().Id + 1;
             item.Title = txtBoxTitle.Text;
             item.Author = txtBoxAuthor.Text;
             item.Description = txtBoxDesc.Text;
@@ -35,25 +38,35 @@ namespace BookAppForm
             return item;
         }
 
-        bool CheckInput(string title, string author, string description, string isbn, string location, bool status)
+        bool CheckInput(string title, string author, string page, string description, string isbn)
         {
             title = txtBoxTitle.Text;
             author = txtBoxAuthor.Text;
             description = txtBoxDesc.Text;
             isbn = txtBoxISBN.Text;
-            location = txtBoxLocation.Text;
             if (string.IsNullOrEmpty(title) ||
                 string.IsNullOrEmpty(author) ||
                 string.IsNullOrEmpty(isbn) ||
-                string.IsNullOrEmpty(location) ||
+                HasLetter(page) ||
                 author.Length < 5 ||
                 author.Length > 20 ||
-                title.Length < 5 ||
                 title.Length > 50 ||
                 isbn.Length > 50)
             {
                 return false;
             }
+            return true;
+        }
+        bool HasLetter(string page)
+        {
+            foreach (char c in page)
+            {
+                if (Char.IsLetter(c))
+                {
+                    return false;
+                }
+            }
+
             return true;
         }
 
@@ -88,7 +101,7 @@ namespace BookAppForm
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var item = ReadLines();
-            if (CheckInput(item.Title, item.Author, item.Description, item.Author, item.Location, item.Status))
+            if (CheckInput(item.Title, item.Author, item.PageCount.ToString(), item.Description, item.ISBN))
             {
                 Add(item);
             }

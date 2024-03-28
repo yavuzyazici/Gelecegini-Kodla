@@ -42,3 +42,5 @@ C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-wi
 C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-windows\BookAppForm.pdb
 C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-windows\BookAppForm.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-windows\ref\BookAppForm.dll
+C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-windows\BookAppForm.Properties.Resources.resources
+C:\Users\ADMIN\Documents\GitHub\Gelecegini-Kodla\BookAppForm\obj\Debug\net8.0-windows\BookAppForm.GiveBook.resources

@@ -41,6 +41,8 @@
             txtBoxLocation = new TextBox();
             label6 = new Label();
             checkBox = new CheckBox();
+            txtBoxPageCount = new TextBox();
+            lblPageCount = new Label();
             SuspendLayout();
             // 
             // label1
@@ -164,11 +166,30 @@
             checkBox.Text = "Okundu";
             checkBox.UseVisualStyleBackColor = true;
             // 
+            // txtBoxPageCount
+            // 
+            txtBoxPageCount.Location = new Point(494, 127);
+            txtBoxPageCount.Name = "txtBoxPageCount";
+            txtBoxPageCount.Size = new Size(197, 23);
+            txtBoxPageCount.TabIndex = 27;
+            // 
+            // lblPageCount
+            // 
+            lblPageCount.AutoSize = true;
+            lblPageCount.Font = new Font("Montserrat Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblPageCount.Location = new Point(494, 93);
+            lblPageCount.Name = "lblPageCount";
+            lblPageCount.Size = new Size(118, 22);
+            lblPageCount.TabIndex = 26;
+            lblPageCount.Text = "Page Count";
+            // 
             // AddBook
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(698, 450);
+            Controls.Add(txtBoxPageCount);
+            Controls.Add(lblPageCount);
             Controls.Add(checkBox);
             Controls.Add(label5);
             Controls.Add(txtBoxLocation);
@@ -206,5 +227,7 @@
         private TextBox txtBoxLocation;
         private Label label6;
         private CheckBox checkBox;
+        private TextBox txtBoxPageCount;
+        private Label lblPageCount;
     }
 }

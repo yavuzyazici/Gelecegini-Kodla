@@ -38,25 +38,32 @@ namespace BookAppForm
                                                                                         x.Author.ToLower().Contains(txtSearch.Text.ToLower()) ||
                                                                                         x.ISBN.Contains(txtSearch.Text)).ToList();
         }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            UpdateBook updateBook = new UpdateBook();
-            string output = FileOperation.ReadFile();
+            if (dG.CurrentRow != null)
+            {
+                UpdateBook updateBook = new UpdateBook();
+                string output = FileOperation.ReadFile();
 
-            var bookList = JsonConvert.DeserializeObject<List<BookItem>>(output);
+                var bookList = JsonConvert.DeserializeObject<List<BookItem>>(output);
 
-            var selectedBook = bookList.Where(x => x.Id.ToString() == dG.CurrentRow.Index.ToString()).FirstOrDefault();
+                var selectedBook = bookList.Where(x => x.Id.ToString() == dG.CurrentRow.Index.ToString()).FirstOrDefault();
 
+                updateBook.a = selectedBook.Title;
+                updateBook.b = selectedBook.Author;
+                updateBook.c = selectedBook.SayfaSayisi.ToString();
+                updateBook.d = selectedBook.Tur;
+                updateBook.e = selectedBook.Durum;
+                updateBook.f = selectedBook.OkunmaTarihi;
+                updateBook.g = selectedBook.ISBN;
+                updateBook.Show();
+            }
+            else
+            {
+                MessageBox.Show("Hiçbir satır seçili değil.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
-            updateBook.a = selectedBook.Title;
-            updateBook.b = selectedBook.Author;
-            updateBook.c = selectedBook.ISBN;
-            updateBook.d = selectedBook.Location;
-            updateBook.e = selectedBook.Status;
-            updateBook.f = selectedBook.Description;
-            home.Hide();
-            updateBook.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -65,6 +72,25 @@ namespace BookAppForm
             AddBook addBook = new AddBook();
             home.Hide();
             addBook.Show();
+        }
+
+        private void btnGive_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            GiveBook giveBook = new GiveBook();
+
+            string output = FileOperation.ReadFile();
+
+            var bookList = JsonConvert.DeserializeObject<List<BookItem>>(output);
+
+            var selectedBook = bookList.Where(x => x.Id.ToString() == dG.CurrentRow.Index.ToString()).FirstOrDefault();
+
+            giveBook.GiveBookSearchBox = selectedBook.Title;
+
+            home.Hide();
+            giveBook.Show();
+
+
         }
     }
 }

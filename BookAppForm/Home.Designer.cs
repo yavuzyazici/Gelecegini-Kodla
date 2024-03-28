@@ -30,6 +30,7 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             dG = new DataGridView();
             btnRefresh = new Button();
             txtSearch = new TextBox();
@@ -64,19 +65,20 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dG.DefaultCellStyle = dataGridViewCellStyle2;
-            dG.Location = new Point(12, 57);
+            dG.Location = new Point(12, 67);
             dG.MultiSelect = false;
             dG.Name = "dG";
             dG.ReadOnly = true;
-            dG.Size = new Size(776, 346);
+            dG.Size = new Size(1121, 496);
             dG.TabIndex = 0;
             // 
             // btnRefresh
             // 
+            btnRefresh.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnRefresh.Font = new Font("Segoe UI", 9F);
-            btnRefresh.Location = new Point(372, 409);
+            btnRefresh.Location = new Point(372, 569);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(57, 29);
+            btnRefresh.Size = new Size(402, 39);
             btnRefresh.TabIndex = 3;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
@@ -85,7 +87,7 @@
             // txtSearch
             // 
             txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            txtSearch.Location = new Point(632, 21);
+            txtSearch.Location = new Point(977, 21);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search";
             txtSearch.Size = new Size(156, 23);
@@ -114,9 +116,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(13, 6);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(56, 6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(177, 45);
+            pictureBox1.Size = new Size(101, 52);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -128,12 +132,13 @@
             btnGive.TabIndex = 6;
             btnGive.Text = "Give";
             btnGive.UseVisualStyleBackColor = true;
+            btnGive.Click += btnGive_Click;
             // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1145, 620);
             Controls.Add(btnGive);
             Controls.Add(pictureBox1);
             Controls.Add(btnAdd);
@@ -153,7 +158,7 @@
 
         #endregion
 
-        public static DataGridView dG;
+        private DataGridView dG;
         private Button btnRefresh;
         private TextBox txtSearch;
         private Button btnUpdate;
